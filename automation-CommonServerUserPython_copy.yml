@@ -1,0 +1,15 @@
+comment: Common user defined code that will be merged into each server script when
+  it runs
+commonfields:
+  id: a6293a84-99ad-4f95-83ed-85a4fba94228
+  version: -1
+name: CommonServerUserPython_copy
+runas: DBotWeakRole
+runonce: false
+script: ""
+scripttarget: 0
+sourcescripid: CommonServerUserPython
+tags:
+- infra
+- server
+type: python
