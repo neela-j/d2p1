@@ -3,7 +3,7 @@ comment: Common user defined code that will be merged into each server script wh
 commonfields:
   id: a6293a84-99ad-4f95-83ed-85a4fba94228
   version: -1
-name: CommonServerUserPython_copy
+name: ADP
 runas: DBotWeakRole
 runonce: false
 script: ""
