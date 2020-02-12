@@ -1,0 +1,343 @@
+{
+	"cronView": false,
+	"dashboard": {
+		"commitMessage": "",
+		"fromDate": "0001-01-01T00:00:00Z",
+		"fromDateLicense": "0001-01-01T00:00:00Z",
+		"id": "",
+		"isCommon": false,
+		"layout": [
+			{
+				"forceRange": false,
+				"h": 2,
+				"i": "5f1bf910-4c43-11ea-b1ad-834007bdb180",
+				"id": "5f1bf910-4c43-11ea-b1ad-834007bdb180",
+				"w": 3,
+				"widget": {
+					"category": "",
+					"commitMessage": "",
+					"dataType": "incidents",
+					"dateRange": {
+						"fromDate": "0001-01-01T00:00:00Z",
+						"fromDateLicense": "0001-01-01T00:00:00Z",
+						"period": {
+							"by": "",
+							"byFrom": "days",
+							"byTo": "",
+							"field": "",
+							"fromValue": 7,
+							"toValue": null
+						},
+						"toDate": "0001-01-01T00:00:00Z"
+					},
+					"id": "active-incidents-by-severity",
+					"isPredefined": true,
+					"modified": "2020-01-25T01:11:38.538068816Z",
+					"name": "Active Incidents - Pie chart",
+					"params": {
+						"groupBy": [
+							"severity"
+						]
+					},
+					"prevName": "Active Incidents - Pie chart",
+					"query": "-category:job and -status:archived and -status:closed",
+					"shouldCommit": false,
+					"size": 0,
+					"sort": null,
+					"sortValues": null,
+					"vcShouldIgnore": false,
+					"version": 2,
+					"widgetType": "pie"
+				},
+				"x": 0,
+				"y": 0
+			}
+		],
+		"modified": "0001-01-01T00:00:00Z",
+		"name": "11081_2",
+		"owner": "",
+		"period": {
+			"by": "",
+			"byFrom": "days",
+			"byTo": "",
+			"field": "",
+			"fromValue": 7,
+			"toValue": null
+		},
+		"prevName": "",
+		"shared": false,
+		"shouldCommit": false,
+		"sortValues": null,
+		"system": false,
+		"toDate": "0001-01-01T00:00:00Z",
+		"vcShouldIgnore": false,
+		"version": 0
+	},
+	"decoder": {
+		"evidences.fetched": {
+			"type": "date",
+			"value": "02/01/06 3:04:05 PM"
+		},
+		"evidences.markedDate": {
+			"type": "date",
+			"value": "02/01/06 3:04:05 PM"
+		},
+		"evidences.occurred": {
+			"type": "date",
+			"value": "02/01/06 3:04:05 PM"
+		},
+		"incident.activated": {
+			"type": "date",
+			"value": "Mon, 02 Jan 2006 15:04:05 MST"
+		},
+		"incident.closed": {
+			"type": "date",
+			"value": "Mon, 02 Jan 2006 15:04:05 MST"
+		},
+		"incident.created": {
+			"type": "date",
+			"value": "Mon, 02 Jan 2006 15:04:05 MST"
+		},
+		"incident.dbotStatus.0": {
+			"type": "string",
+			"value": "Pending"
+		},
+		"incident.dbotStatus.1": {
+			"type": "string",
+			"value": "Active"
+		},
+		"incident.dbotStatus.2": {
+			"type": "string",
+			"value": "Closed"
+		},
+		"incident.dbotStatus.3": {
+			"type": "string",
+			"value": "Closed"
+		},
+		"incident.dbotStatus.4": {
+			"type": "string",
+			"value": "On Hold"
+		},
+		"incident.dueDate": {
+			"type": "date",
+			"value": "Mon, 02 Jan 2006 15:04:05 MST"
+		},
+		"incident.modified": {
+			"type": "date",
+			"value": "Mon, 02 Jan 2006 15:04:05 MST"
+		},
+		"incident.occurred": {
+			"type": "date",
+			"value": "Mon, 02 Jan 2006 15:04:05 MST"
+		},
+		"incident.openDuration": {
+			"type": "duration",
+			"value": ""
+		},
+		"incident.phase.": {
+			"type": "string",
+			"value": "Unassigned"
+		},
+		"incident.reminder": {
+			"type": "date",
+			"value": "Mon, 02 Jan 2006 15:04:05 MST"
+		},
+		"incident.roles.": {
+			"type": "string",
+			"value": "Unassigned"
+		},
+		"incident.severity.0": {
+			"type": "string",
+			"value": "Unknown"
+		},
+		"incident.severity.0.5": {
+			"type": "string",
+			"value": "Informational"
+		},
+		"incident.severity.1": {
+			"type": "string",
+			"value": "Low"
+		},
+		"incident.severity.2": {
+			"type": "string",
+			"value": "Medium"
+		},
+		"incident.severity.3": {
+			"type": "string",
+			"value": "High"
+		},
+		"incident.severity.4": {
+			"type": "string",
+			"value": "Critical"
+		},
+		"incident.status.0": {
+			"type": "string",
+			"value": "Pending"
+		},
+		"incident.status.1": {
+			"type": "string",
+			"value": "Active"
+		},
+		"incident.status.2": {
+			"type": "string",
+			"value": "Closed"
+		},
+		"incident.status.3": {
+			"type": "string",
+			"value": "Closed"
+		},
+		"incident.status.4": {
+			"type": "string",
+			"value": "On Hold"
+		},
+		"incident.totalTime": {
+			"type": "date",
+			"value": "Mon, 02 Jan 2006 15:04:05 MST"
+		},
+		"indicators.firstSeen": {
+			"type": "date",
+			"value": "Mon, 02 Jan 2006 15:04:05 MST"
+		},
+		"indicators.lastSeen": {
+			"type": "date",
+			"value": "Mon, 02 Jan 2006 15:04:05 MST"
+		},
+		"indicators.score.0": {
+			"type": "string",
+			"value": "None"
+		},
+		"indicators.score.1": {
+			"type": "string",
+			"value": "Good"
+		},
+		"indicators.score.2": {
+			"type": "string",
+			"value": "suspicious"
+		},
+		"indicators.score.3": {
+			"type": "string",
+			"value": "Bad"
+		},
+		"investigation.closed": {
+			"type": "date",
+			"value": "02 Jan 2006"
+		},
+		"investigation.created": {
+			"type": "date",
+			"value": "Mon, 02 Jan 2006 15:04:05 MST"
+		},
+		"investigation.openDuration": {
+			"type": "duration",
+			"value": ""
+		},
+		"investigation.status.0": {
+			"type": "string",
+			"value": "Active"
+		},
+		"investigation.status.1": {
+			"type": "string",
+			"value": "Done"
+		},
+		"investigation.type.0": {
+			"type": "string",
+			"value": "Standard"
+		},
+		"investigation.type.1": {
+			"type": "string",
+			"value": "Restricted"
+		},
+		"investigation.type.9": {
+			"type": "string",
+			"value": "Playground"
+		}
+	},
+	"disableHeader": false,
+	"endingDate": "0001-01-01T00:00:00Z",
+	"id": "4a03e49b-415a-4e23-8d81-88e075262015",
+	"latestReportName": "",
+	"latestReportTime": "0001-01-01T00:00:00Z",
+	"latestReportUsername": "",
+	"latestScheduledReportTime": "0001-01-01T00:00:00Z",
+	"locked": false,
+	"name": "11081_2",
+	"nextScheduledTime": "0001-01-01T00:00:00Z",
+	"orientation": "portrait",
+	"paperSize": "A4",
+	"recipients": null,
+	"recurrent": false,
+	"reportType": "",
+	"runOnce": false,
+	"runningUser": "",
+	"scheduled": false,
+	"sections": [
+		{
+			"automation": {
+				"args": null,
+				"id": "",
+				"name": "",
+				"noEvent": false
+			},
+			"data": null,
+			"layout": {
+				"chartProperties": {
+					"cx": "50%",
+					"cy": "50%",
+					"innerRadius": "75%",
+					"layout": "vertical",
+					"maxRadius": 0,
+					"outerRadius": "100%"
+				},
+				"chartType": "pie",
+				"columnPos": 0,
+				"dimensions": {
+					"height": 180,
+					"width": 146
+				},
+				"h": 2,
+				"i": "5f1bf910-4c43-11ea-b1ad-834007bdb180",
+				"legendStyle": {
+					"align": "center",
+					"hideLegend": false,
+					"iconType": "circle",
+					"layout": "vertical",
+					"verticalAlign": "bottom",
+					"width": 0
+				},
+				"rowPos": 0,
+				"w": 3
+			},
+			"query": {
+				"filter": {
+					"fromDate": "0001-01-01T00:00:00Z",
+					"period": {
+						"by": "",
+						"byFrom": "days",
+						"byTo": "",
+						"field": "",
+						"fromValue": 7,
+						"toValue": null
+					},
+					"query": "-category:job and -status:archived and -status:closed",
+					"toDate": "0001-01-01T00:00:00Z"
+				},
+				"groupBy": [
+					"severity"
+				],
+				"type": "incident"
+			},
+			"title": "Active Incidents - Pie chart",
+			"titleStyle": null,
+			"type": "chart"
+		}
+	],
+	"sensitive": false,
+	"sortValues": null,
+	"startDate": "0001-01-01T00:00:00Z",
+	"system": false,
+	"times": 0,
+	"timezoneOffset": 0,
+	"type": "pdf",
+	"userAPIKey": "",
+	"userAPIKeyID": "",
+	"version": -1
+}
