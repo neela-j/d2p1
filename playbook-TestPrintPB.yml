@@ -1,0 +1,74 @@
+id: 69977629-e407-4718-870e-52d44e582547
+inputs:
+- description: ""
+  key: test
+  required: false
+  value: {}
+name: TestPrintPB
+outputs: []
+starttaskid: "0"
+tasks:
+  "0":
+    id: "0"
+    ignoreworker: false
+    nexttasks:
+      '#none#':
+      - "1"
+    note: false
+    separatecontext: false
+    task:
+      brand: ""
+      id: e1ccbd58-ef0a-40ee-8e36-bedb37d5fc4b
+      iscommand: false
+      name: ""
+      version: -1
+    taskid: e1ccbd58-ef0a-40ee-8e36-bedb37d5fc4b
+    timertriggers: []
+    type: start
+    view: |-
+      {
+        "position": {
+          "x": 450,
+          "y": 50
+        }
+      }
+  "1":
+    id: "1"
+    ignoreworker: false
+    note: false
+    scriptarguments:
+      value:
+        simple: testprint
+    separatecontext: false
+    task:
+      brand: ""
+      description: Prints text to war room (Markdown supported)
+      id: 88d12320-931b-4bb6-8e9f-c8415ce11451
+      iscommand: false
+      name: print
+      script: Print
+      type: regular
+      version: -1
+    taskid: 88d12320-931b-4bb6-8e9f-c8415ce11451
+    timertriggers: []
+    type: regular
+    view: |-
+      {
+        "position": {
+          "x": 450,
+          "y": 250
+        }
+      }
+version: -1
+view: |-
+  {
+    "linkLabelsPosition": {},
+    "paper": {
+      "dimensions": {
+        "height": 295,
+        "width": 380,
+        "x": 450,
+        "y": 50
+      }
+    }
+  }
