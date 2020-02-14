@@ -1,0 +1,75 @@
+id: 0167a4da-4cd1-4fc8-88c8-f40ee86517fe
+inputs:
+- description: ""
+  key: aaaaa
+  required: false
+  value: {}
+name: PB fail
+outputs: []
+starttaskid: "0"
+tasks:
+  "0":
+    id: "0"
+    ignoreworker: false
+    nexttasks:
+      '#none#':
+      - "1"
+    note: false
+    separatecontext: false
+    task:
+      brand: ""
+      id: 73143679-3f6e-407e-8f33-5e8d07c86442
+      iscommand: false
+      name: ""
+      version: -1
+    taskid: 73143679-3f6e-407e-8f33-5e8d07c86442
+    timertriggers: []
+    type: start
+    view: |-
+      {
+        "position": {
+          "x": 450,
+          "y": 50
+        }
+      }
+  "1":
+    id: "1"
+    ignoreworker: false
+    note: false
+    scriptarguments:
+      device-group: {}
+      name:
+        simple: SADJIOSADIOJ
+    separatecontext: false
+    task:
+      brand: Panorama
+      description: Deletes a service group.
+      id: 9aabd0e6-1b86-4b63-8b63-8278fa78e778
+      iscommand: true
+      name: TaSK
+      script: Panorama|||panorama-delete-service-group
+      type: regular
+      version: -1
+    taskid: 9aabd0e6-1b86-4b63-8b63-8278fa78e778
+    timertriggers: []
+    type: regular
+    view: |-
+      {
+        "position": {
+          "x": 460,
+          "y": 250
+        }
+      }
+version: -1
+view: |-
+  {
+    "linkLabelsPosition": {},
+    "paper": {
+      "dimensions": {
+        "height": 295,
+        "width": 390,
+        "x": 450,
+        "y": 50
+      }
+    }
+  }
