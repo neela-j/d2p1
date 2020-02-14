@@ -5,7 +5,7 @@ description: |-
 id: 8440827b-9112-414c-8a94-44f16dff3699
 inputs:
 - description: The source IP address from which the incident originated.
-  key: SrcIP
+  key: SrcIPxx
   required: false
   value:
     complex:
