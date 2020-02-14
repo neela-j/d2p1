@@ -1,7 +1,7 @@
 id: 69977629-e407-4718-870e-52d44e582547
 inputs:
 - description: ""
-  key: test
+  key: test1
   required: false
   value: {}
 name: TestPrintPB
