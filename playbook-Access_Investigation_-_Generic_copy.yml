@@ -564,6 +564,15 @@ tasks:
     separatecontext: true
     task:
       brand: ""
+      description: |-
+        Enrich IP using one or more integrations.
+
+        IP enrichment includes:
+        * Resolve IP to Hostname (DNS)
+        * Threat information
+        * Separate internal and external addresses
+        * IP reputation
+        * For internal addresses, get host information
       id: 160c3d44-9b6f-4207-8df9-69f7c6ac3eb7
       iscommand: false
       name: IP Enrichment - Generic
@@ -601,6 +610,15 @@ tasks:
     separatecontext: true
     task:
       brand: ""
+      description: |-
+        Enrich IP using one or more integrations.
+
+        IP enrichment includes:
+        * Resolve IP to Hostname (DNS)
+        * Threat information
+        * Separate internal and external addresses
+        * IP reputation
+        * For internal addresses, get host information
       id: 74b00019-68dc-4e52-8b6e-8eb97721b8cb
       iscommand: false
       name: IP Enrichment - Generic
