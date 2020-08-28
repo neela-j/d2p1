@@ -32,26 +32,23 @@ tasks:
   "1":
     id: "1"
     ignoreworker: false
-    nexttasks:
-      '#none#':
-      - "2"
     note: false
     scriptarguments:
       listData:
-        simple: tiger
+        simple: ${incident.labels.Instance}
       listName:
         simple: List_Case_01528270
     separatecontext: false
     task:
       brand: Builtin
       description: commands.local.cmd.list.set
-      id: 30d516ee-7075-4eb2-882b-33b0e5598647
+      id: e5486e8b-1cc9-4bf6-8038-301a3007c961
       iscommand: true
       name: Set List
       script: Builtin|||setList
       type: regular
       version: -1
-    taskid: 30d516ee-7075-4eb2-882b-33b0e5598647
+    taskid: e5486e8b-1cc9-4bf6-8038-301a3007c961
     timertriggers: []
     type: regular
     view: |-
@@ -61,74 +58,13 @@ tasks:
           "y": 240
         }
       }
-  "2":
-    id: "2"
-    ignoreworker: false
-    nexttasks:
-      '#none#':
-      - "3"
-    note: false
-    scriptarguments:
-      listData:
-        simple: '*'
-      listName:
-        simple: List_Case_01528270
-    separatecontext: false
-    task:
-      brand: Builtin
-      description: commands.local.cmd.list.set
-      id: c9093469-9e74-4b0a-8168-b6a09441f24f
-      iscommand: true
-      name: Set List *
-      script: Builtin|||setList
-      type: regular
-      version: -1
-    taskid: c9093469-9e74-4b0a-8168-b6a09441f24f
-    timertriggers: []
-    type: regular
-    view: |-
-      {
-        "position": {
-          "x": 450,
-          "y": 470
-        }
-      }
-  "3":
-    id: "3"
-    ignoreworker: false
-    note: false
-    scriptarguments:
-      listData:
-        simple: monkey
-      listName:
-        simple: List_Case_01528270
-    separatecontext: false
-    task:
-      brand: Builtin
-      description: commands.local.cmd.list.add
-      id: 8f71b094-d5b7-439c-8e2e-5acffd66bfbd
-      iscommand: true
-      name: Add to List
-      script: Builtin|||addToList
-      type: regular
-      version: -1
-    taskid: 8f71b094-d5b7-439c-8e2e-5acffd66bfbd
-    timertriggers: []
-    type: regular
-    view: |-
-      {
-        "position": {
-          "x": 450,
-          "y": 700
-        }
-      }
 version: -1
 view: |-
   {
     "linkLabelsPosition": {},
     "paper": {
       "dimensions": {
-        "height": 745,
+        "height": 285,
         "width": 380,
         "x": 450,
         "y": 50
