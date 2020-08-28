@@ -1,0 +1,98 @@
+{
+	"brandName": "Expanse",
+	"custom": false,
+	"defaultIncidentType": "",
+	"feed": false,
+	"id": "Expanse",
+	"incidentSamples": [],
+	"indicatorSamples": null,
+	"instanceId": "",
+	"instanceName": "",
+	"isDefault": true,
+	"keyTypeMap": {},
+	"mapping": {
+		"Expanse Appearance": {
+			"dontMapEventToLabels": false,
+			"internalMapping": {
+				"Expanse Business Unit": {
+					"complex": {
+						"accessor": "name",
+						"filters": [],
+						"root": "businessUnit",
+						"transformers": []
+					},
+					"simple": ""
+				},
+				"Expanse Exposure Type": {
+					"complex": {
+						"accessor": "exposureType",
+						"filters": [],
+						"root": "payload",
+						"transformers": []
+					},
+					"simple": ""
+				},
+				"Expanse Severity": {
+					"complex": {
+						"accessor": "severity",
+						"filters": [],
+						"root": "payload",
+						"transformers": []
+					},
+					"simple": ""
+				},
+				"ExpanseRawJSONEvent": {
+					"complex": {
+						"accessor": "",
+						"filters": [],
+						"root": ".",
+						"transformers": []
+					},
+					"simple": ""
+				}
+			}
+		},
+		"Expanse Behavior": {
+			"dontMapEventToLabels": false,
+			"internalMapping": {
+				"Expanse Behavior Rule": {
+					"complex": {
+						"accessor": "name",
+						"filters": [],
+						"root": "riskRule",
+						"transformers": []
+					},
+					"simple": ""
+				},
+				"Expanse Business Unit": {
+					"complex": {
+						"accessor": "name",
+						"filters": [],
+						"root": "businessUnit",
+						"transformers": []
+					},
+					"simple": ""
+				},
+				"ExpanseRawJSONEvent": {
+					"complex": {
+						"accessor": "",
+						"filters": [],
+						"root": ".",
+						"transformers": []
+					},
+					"simple": ""
+				}
+			}
+		}
+	},
+	"propagationLabels": [
+		"all"
+	],
+	"sortValues": null,
+	"transformer": {
+		"complex": null,
+		"simple": ""
+	},
+	"unclassifiedCases": {},
+	"version": -1
+}
