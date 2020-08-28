@@ -35,6 +35,9 @@ tasks:
   "1":
     id: "1"
     ignoreworker: false
+    nexttasks:
+      '#none#':
+      - "2"
     note: false
     scriptarguments:
       value:
@@ -59,15 +62,162 @@ tasks:
           "y": 250
         }
       }
+  "2":
+    id: "2"
+    ignoreworker: false
+    nexttasks:
+      '#none#':
+      - "3"
+    note: false
+    scriptarguments:
+      magic-word:
+        simple: paris
+    separatecontext: false
+    task:
+      brand: ""
+      description: try me
+      id: f8391d44-b944-48ca-8f09-0b00c85b37e4
+      iscommand: true
+      name: Clue
+      script: '|||clue'
+      type: regular
+      version: -1
+    taskid: f8391d44-b944-48ca-8f09-0b00c85b37e4
+    timertriggers: []
+    type: regular
+    view: |-
+      {
+        "position": {
+          "x": 450,
+          "y": 460
+        }
+      }
+  "3":
+    id: "3"
+    ignoreworker: false
+    nexttasks:
+      '#none#':
+      - "4"
+    note: false
+    scriptarguments:
+      magic-word: {}
+    separatecontext: false
+    task:
+      brand: Where is the egg?
+      description: try me
+      id: 085c6167-a143-4129-87eb-12787e294fb2
+      iscommand: true
+      name: Task3
+      script: Where is the egg?|||clue
+      type: regular
+      version: -1
+    taskid: 085c6167-a143-4129-87eb-12787e294fb2
+    timertriggers: []
+    type: regular
+    view: |-
+      {
+        "position": {
+          "x": 430,
+          "y": 640
+        }
+      }
+  "4":
+    id: "4"
+    ignoreworker: false
+    nexttasks:
+      '#none#':
+      - "5"
+    note: false
+    scriptarguments:
+      value:
+        simple: neelaj
+    separatecontext: false
+    task:
+      brand: ""
+      description: Prints text to war room (Markdown supported)
+      id: dc295026-1e31-411a-8c16-01e2515bea22
+      iscommand: false
+      name: Task4
+      script: Print
+      type: regular
+      version: -1
+    taskid: dc295026-1e31-411a-8c16-01e2515bea22
+    timertriggers: []
+    type: regular
+    view: |-
+      {
+        "position": {
+          "x": 430,
+          "y": 820
+        }
+      }
+  "5":
+    id: "5"
+    ignoreworker: false
+    nexttasks:
+      '#none#':
+      - "6"
+    note: false
+    scriptarguments:
+      incidentId:
+        simple: "585"
+      name: {}
+    separatecontext: false
+    task:
+      brand: Builtin
+      description: commands.local.cmd.set.playbook
+      id: 3620b1a3-ffb2-4877-8330-67c1f0279930
+      iscommand: true
+      name: sePB
+      script: Builtin|||setPlaybook
+      type: regular
+      version: -1
+    taskid: 3620b1a3-ffb2-4877-8330-67c1f0279930
+    timertriggers: []
+    type: regular
+    view: |-
+      {
+        "position": {
+          "x": 430,
+          "y": 1010
+        }
+      }
+  "6":
+    id: "6"
+    ignoreworker: false
+    note: false
+    scriptarguments:
+      value:
+        simple: neela
+    separatecontext: false
+    task:
+      brand: ""
+      description: Prints text to war room (Markdown supported)
+      id: 55226973-288c-4d9b-8dff-9d331509a5f1
+      iscommand: false
+      name: Print
+      script: Print
+      type: regular
+      version: -1
+    taskid: 55226973-288c-4d9b-8dff-9d331509a5f1
+    timertriggers: []
+    type: regular
+    view: |-
+      {
+        "position": {
+          "x": 430,
+          "y": 1180
+        }
+      }
 version: -1
 view: |-
   {
     "linkLabelsPosition": {},
     "paper": {
       "dimensions": {
-        "height": 295,
-        "width": 380,
-        "x": 450,
+        "height": 1225,
+        "width": 400,
+        "x": 430,
         "y": 50
       }
     }
